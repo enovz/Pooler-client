@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Demokrasi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="app/css/style2.css">
+	<link rel="stylesheet" href="app/css/style.css">
+	<link rel="stylesheet" href="app/css/forms/form.tpl.css">
+	<link rel="stylesheet" href="app/css/forms/form.tpl.css">
+	<!-- font-awesome -->
+	<script src="https://use.fontawesome.com/293303a005.js"></script>
+	<!-- Boostrap script -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+</head>
+
+
+<body ng-app="ngApp">
+
+
+	<!-- view -->
+	<div ng-view></div>
+	<!-- end view -->
+
+
+
+</body>
+
+
+<!-- Scripts -->
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-route/angular-route.min.js"></script>
+<script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="/bower_components/ngstorage/ngStorage.min.js"></script>
+<script src="/bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<script src="/bower_components/chart.js/Chart.min.js"></script>
+<script src="/bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+<script src="/scripts/toggleMenu.js"></script>
+
+<!-- App -->
+<script src="/app/app.js"></script>
+<!-- Common -->
+<script src="/app/js/common/controllers/navbarCtrl.js"></script>
+<script src="/app/js/common/directives/navbarDirective.js"></script>
+<script src="/app/js/common/services/Navbar.js"></script>
+<script src="/app/js/common/services/Pool.js"></script>
+<script src="/app/js/common/services/Authentication.js"></script>
+<script src="/app/js/common/services/UserPersistence.js"></script>
+
+<!-- Home -->
+<script src="/app/js/home/controllers/homeCtrl.js"></script>
+
+<!-- Login -->
+<script src="/app/js/login/controllers/loginCtrl.js"></script>
+<script src="/app/js/login/services/Login.js"></script>
+<script src="/app/js/login/directives/loginDirective.js"></script>
+
+<!-- Register -->
+<script src="/app/js/register/controllers/registerCtrl.js"></script>
+<script src="/app/js/register/services/Register.js"></script>
+<script src="/app/js/register/directives/registerDirective.js"></script>
+
+<!-- User -->
+<script src="/app/js/user/controllers/userCtrl.js"></script>
+<script src="/app/js/user/services/userPool.js"></script>
+<script src="/app/js/user/directives/poolFormDirective.js"></script>
+
+<!-- Pool --> 
+<script src="/app/js/pool/controllers/poolCtrl.js"></script>
+<script src="/app/js/pool/services/BallotBox.js"></script>
+<script src="/app/js/pool/directives/chartDirective.js"></script>
+
+</html>

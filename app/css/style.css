@@ -1,0 +1,78 @@
+/*buttons*/
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 300;
+    width:100%;
+    border-radius:0;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+.btn.sidebar {
+    background: inherit;
+    text-align: left;
+}
+.btn-circle {
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 2.00;
+  border-radius: 30px;
+}
+.btn-circle-lg {
+  width: 79px;
+  height: 79px;
+  text-align: right;
+  padding: 13px 0;
+  font-size: 30px;
+  line-height: 2.00;
+  border-radius: 70px;
+}
+
+/*end buttons*/
+
+
+/*body*/
+body{
+    background: url("../img/restaurant.png");
+}
+.header-lite{
+    text-align: center;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position:relative;
+    margin-top:2%;
+}
+/*body end*/
+
+/* userPanel*/
+.user-name{
+    text-align: center;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 65%;
+}
+/*end userPanel*/
+

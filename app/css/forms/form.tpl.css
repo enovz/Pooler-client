@@ -1,0 +1,22 @@
+/*Forms*/
+input[type="text"], input[type="password"] {
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    background: transparent;
+    border-bottom: 2px solid white;;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance:none;
+    color:white;
+    text-align: center;
+}
+textarea:hover, input[type="text"]:hover,input[type="password"]:hover, textarea:active, input[type="text"]:active,input[type="password"]:active, textarea:focus, input[type="text"]:focus, input[type="password"]:focus {
+    outline:0px !important;
+    box-shadow: none;
+    border-radius: 0px;
+    -webkit-appearance:none;
+    border-bottom: 2px solid white;;
+}
+
+/*end Forms*/

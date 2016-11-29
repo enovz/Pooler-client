@@ -1,0 +1,51 @@
+<head>
+	<link rel="stylesheet" href="app/css/forms/poolForm.tpl.css">
+</head>
+<html>
+<!-- Create Pool -->
+<div class="row-fluid">
+	<div class="col-md-2">
+		<div ng-click="showPoolForm()" class="btn btn-primary">{{open_close}}
+			<br>
+		</div>
+	</div>
+	<!-- Pool Description -->
+	<form ng-show="poolForm">
+		<div class="form-group row">
+			<!-- Pool Title -->
+			<div class="col-sm-3">
+				<input type="text" class="form-control input-lg" ng-model="pool.title" required>
+				<h4 ng-show="titleWarning"> Title ? </h4>
+			</div>
+			<!-- end Pool Title -->
+			<!-- addData -->
+			<div class="col-sm-3">
+				<input type="text" class="form-control input-lg" ng-model="newLabel" placeholder="Option">
+				<h4 ng-show="dataWarning"> Voting Option ? </h4>
+			</div>
+			<div class="col-sm-1">
+				<div ng-click="addData()" class="btn btn-success" aria-hidden="true">Add</div>
+			</div>
+			<!-- end addData -->
+			<!-- Submit Pool -->
+			<div class="col-sm-2">
+				<div data-ng-disabled="checkForm()" ng-click="submitPool()" class="btn btn-danger" aria-hidden="true">Create</div>
+			</div>
+			<!-- end Submit -->
+			<!-- Pool dataset -->
+			<div class="col-sm-12">
+				<ul class="dataset-list">
+					<li ng-repeat="data in dataset" ng-click="removeData($index)">
+						<span class="fa fa-close"></span>
+						<span>{{data.label}}</span>
+					</li>
+				</ul>
+			</div>
+			<!--end Pool dataset -->
+		</div>
+	</form>
+	<!-- end Pool Description -->
+</div>
+<!-- end Create Pool -->
+
+</html>

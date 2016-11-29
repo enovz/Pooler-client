@@ -1,0 +1,36 @@
+<html>
+<!-- navbar -->
+<div navbar-directive ng-controller="navbarCtrl"></div>
+<!-- end navbar -->
+
+<div class="container">
+	<!-- Page Heading -->
+	<div class="row">
+		<div class="col-lg-12 header-lite">
+			<h1 class="page-header">{{pageTitle}}</h1>
+		</div>
+	</div>
+	<!-- /.row -->
+
+	<!-- Projects Row -->
+	<div class="row">
+		<div ng-repeat="pool in pools">
+			<div class="col-md-3"> <!--openPool($index) for pagging -->
+				<div class="thumbnail pool-item" ng-click="openPool(pool)">
+					<div class="caption">
+						<h4 class="pool-title">{{pool.title}}</h4>
+					</div>
+					<div class="ratings">
+						<i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
+						<p>{{pool.voted.length}} voted</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- /.row -->
+</div>
+
+
+</html>

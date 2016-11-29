@@ -1,0 +1,45 @@
+/*Forms*/
+input[type="text"] {
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    background: transparent;
+    border-bottom: 2px solid #428bca;;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance:none;
+    color:white;
+    text-transform: capitalize;
+}
+input:placeholder-shown {
+  color:#428bca;
+}
+textarea:hover, input[type="text"]:hover, textarea:active, input[type="text"]:active, textarea:focus, input[type="text"]:focus {
+    outline:0px !important;
+    box-shadow: none;
+    border-radius: 0px;
+    -webkit-appearance:none;
+    border-bottom: 2px solid #428bca;
+}
+.dataset-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+.dataset-list li {
+  border: 1px solid #4cae4c;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color:white;
+  background-color: #4cae4c;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+h4{
+  color: white;
+  text-align: center;
+}
+/*end Forms*/
