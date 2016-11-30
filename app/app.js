@@ -13,11 +13,11 @@ angular.module('ngApp', ['ngRoute', 'ngResource','ngStorage','chart.js','ngCooki
 				templateUrl: 'app/partials/register.html',
 				controller: 'registerCtrl'
 			})
-			.when('/pool/:pool_id', {
+			.when('/pools/:pool_id', {
 				templateUrl: '/app/partials/pool.html',
 				controller: 'poolCtrl' 
 			})
-			.when('/user/:user_id', {
+			.when('/users/:user_id', {
 				templateUrl: 'app/partials/userPanel.html',
 				controller: 'userCtrl'
 			})
