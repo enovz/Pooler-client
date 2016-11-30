@@ -1,4 +1,4 @@
-angular.module('ngApp', ['ngRoute', 'ngResource','ngCookies','ngStorage', 'chart.js'])
+angular.module('ngApp', ['ngRoute', 'ngResource','ngStorage','chart.js','ngCookies'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
