@@ -6,7 +6,7 @@ angular.module('ngApp')
                 create: function (pool) {
                     var user = Authentication.getCurrentUser();
                     $http.defaults.headers.common['Authorization'] = user.token;
-                    $http.post('/api/user/'+ user.userInfo._id + '/pool', pool)
+                    $http.post('/api/users/'+ user.userInfo._id + '/pools', pool)
                         .then(function (data, status, headers) {
                             
                         }, function (err) { return err; })

@@ -6,7 +6,7 @@ angular.module('ngApp')
     .factory('Register', function ($http) {
         return {
             newUser: function (user, cb) {
-                $http.post('/public/register', user)
+                $http.post('/api/register', user)
                     .then(function (data, status, headers) {
                         cb(data);
                     }, function (err) { return err; })

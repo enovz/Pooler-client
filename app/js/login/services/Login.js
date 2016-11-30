@@ -6,7 +6,7 @@ angular.module('ngApp')
     .factory('Login', ['$http', function ($http) {
         return {
             getUser: function (user, cb) {
-                $http.post('/public/login', user)
+                $http.post('/api/login', user)
                     .then(function (data, status, headers) {
                         cb(data);
                     }, function (err) { return err; })
